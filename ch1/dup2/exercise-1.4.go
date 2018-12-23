@@ -34,7 +34,7 @@ func main() {
 	for line, n := range counts {
 		if n > 1 {
 			fmt.Printf("%d\t%s\n", n, line)
-			for _, filename := range filenames[line] {
+			for filename, _ := range filenames[line] {
 				fmt.Printf("\t%s\n", filename)
 			}
 		}
